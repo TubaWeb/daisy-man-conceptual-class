@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +7,24 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Daisy Man</title>
+     <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          backgroundImage: {
+            'hero-bg': "url('./images/hero.jpg')",
+          },
+        }
+      }
+    }
+  </script>
 </head>
 <body>
     <header>
         <!-- navbar -->
-        <nav>
-            <div class="navbar bg-slate-200">
+        <nav class=" bg-slate-200">
+          <!--এই ক্লাস গুলো প্রতিটা সেকশন এর মেইন কন্টেইনার এ বসালে রেস্পন্সিভ করা সহজ হয়ে যাবে।  (max-w-screen-xl mx-auto my-10 py-5 px-8 md:px-16 lg:px-24) -->
+            <div class="navbar max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24">
                 <div class="flex-1">
                   <a class="btn btn-primary text-white normal-case text-xl">DaisyMan</a>
                 </div>
@@ -56,21 +68,67 @@
         </nav>
         <!-- hero section -->
         <section>
-            <div class="hero min-h-[calc(100vh-66px)]" style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
-                <div class="hero-overlay bg-opacity-60"></div>
-                <div class="hero-content text-center text-neutral-content">
-                  <div class="max-w-md">
-                    <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-                    <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <button class="btn btn-primary">Get Started</button>
-                  </div>
-                </div>
-              </div> 
+          <div class="hero min-h-[calc(100vh-66px)] bg-hero-bg">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Welcome to DaisyMan</h1>
+                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <button class="btn btn-primary">shop now</button>
+              </div>
+            </div>
+          </div>
         </section>
     </header>
-    <main>
 
+
+    <main>
+      <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+        <!-- huge header -->
+        <div class="text-center mb-5">
+          <h3 class="text-2xl md:text-4xl font-semibold">Huge Collection</h3>
+          <p class="text-sm">Browse for a various Collection</p>
+        </div>
+
+        <!-- card -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div class="card bg-base-100 shadow-xl image-full">
+            <figure><img src="./images/shoe.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl image-full">
+            <figure><img src="./images/shoe.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl image-full">
+            <figure><img src="./images/shoe.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
     </main>
+
+
+
     <footer>
 
     </footer>
