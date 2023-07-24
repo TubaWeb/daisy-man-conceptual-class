@@ -12,7 +12,7 @@
       theme: {
         extend: {
           backgroundImage: {
-            'hero-bg': "url('./images/hero.jpg')",
+            'hero-bg': "url('./images/banner.jpg')",
           },
         }
       }
@@ -150,13 +150,130 @@
           </div>
         </div>
       </section>
+
+      <!-- Products section -->
+      <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+        <!-- heading -->
+        <div>
+          <div class="text-center mb-5">
+            <h3 class="text-2xl md:text-4xl font-semibold">Top Products</h3>
+            <p class="text-sm">Browse for a various Collection</p>
+          </div>
+        </div>
+
+        <!-- cards -->
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+          <div class="card bg-base-100 shadow-xl">
+            <figure><img src="/images/clothe.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Formal shirt!</h2>
+              <p>Lorem ipsum dolor sit amet elit. Officia, quisquam!</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl">
+            <figure><img src="/images/perfume.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Formal shirt!</h2>
+              <p>Lorem ipsum dolor sit amet elit. Officia, quisquam!</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl">
+            <figure><img src="/images/clothe.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Formal shirt!</h2>
+              <p>Lorem ipsum dolor sit amet elit. Officia, quisquam!</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl">
+            <figure><img src="/images/shoe.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Formal shirt!</h2>
+              <p>Lorem ipsum dolor sit amet elit. Officia, quisquam!</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
       
+      <!-- FAQ section -->
+      <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+      <!-- heading -->
+        <div>
+          <div class="text-center mb-5">
+            <h3 class="text-2xl md:text-4xl font-semibold">FAQ</h3>
+            <p class="text-sm">Browse for a various Collection</p>
+          </div>
+        </div>
+
+        <!-- accordion -->
+        <div class="collapse collapse-plus bg-slate-200 mb-2">
+          <input type="radio" name="my-accordion-3" checked="checked" /> 
+          <div class="collapse-title text-xl font-medium">
+            Click to open this one and close others
+          </div>
+          <div class="collapse-content"> 
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-slate-200 mb-2">
+          <input type="radio" name="my-accordion-3" /> 
+          <div class="collapse-title text-xl font-medium">
+            Click to open this one and close others
+          </div>
+          <div class="collapse-content"> 
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-slate-200 mb-2">
+          <input type="radio" name="my-accordion-3" /> 
+          <div class="collapse-title text-xl font-medium">
+            Click to open this one and close others
+          </div>
+          <div class="collapse-content"> 
+            <p>hello</p>
+          </div>
+        </div>
+      </section>
+
     </main>
 
 
 
-    <footer>
-
-    </footer>
+    
+      <footer class="footer p-10 bg-neutral text-neutral-content">
+        <div>
+          <span class="footer-title">Services</span> 
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </div> 
+        <div>
+          <span class="footer-title">Company</span> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </div> 
+        <div>
+          <span class="footer-title">Legal</span> 
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </div>
+      </footer>
+  
 </body>
 </html>
